@@ -13,7 +13,7 @@ class messageConverter:
         rospy.spin()
         
     def pointcloud_callback(self, data):
-        pass
+        self.pointcloud2_pub.publish(data)
         # print(data)
 
 if __name__ == '__main__':
